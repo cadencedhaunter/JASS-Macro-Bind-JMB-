@@ -19,7 +19,7 @@ Files:
    
   Available events:
   
-        initEvent - triggers upon initialization
+        initEvent - triggers upon initialization;
   
-        timerEvent(frequency) - timer with specified interval (real number)
+        timerEvent(frequency[, isPeriodic]) - timer with specified interval (real) [is timer periodic (boolean)];
       
