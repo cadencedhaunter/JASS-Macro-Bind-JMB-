@@ -11,7 +11,7 @@ Event-binding automatization in JASS.
         
         http://www.wc3c.net/vexorian/jasshelpermanual.html - vJass manual (eng)
 
-  All the files here are usually text files, can be opened with any text editor and can be imported with cJass by 'include'. 
+  All the files here are usual text files, can be opened with any text editor and can be imported with cJass by 'include'. 
 
 Files:
 ---
