@@ -13,6 +13,25 @@ Event-binding automatization in JASS.
 
   All the files here are usual text files, can be opened with any text editor and can be imported with cJass by 'include'. 
 
+Syntax:
+---
+  Syntax example: 
+  
+    
+    code static{
+      /* Actions block, any code */ 
+    }
+      code set: { /* special modifiers */}
+      code event: [event]([params]) // Event, which triggers Action's block
+   
+  Example of use:
+    
+    code static{
+      BJDebugMsg("Hello world!");
+    }
+      code set: { /* nothing to modify */ }
+      code event: initEvent
+
 Files:
 ---
   jmb-code-static.j - Contains main part of system (in process, look wiki (in progress too))
