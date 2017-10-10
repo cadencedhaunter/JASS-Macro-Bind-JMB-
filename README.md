@@ -5,3 +5,14 @@ Event-binding automatization in JASS.
 
 
   For compatibility purposes, this code does not use any other libraries or other defined macroses like 'void','int','bool', 'float'. Requires NewGen World Editor.
+
+  All the files here are usually text files, can be opened with any text editor. 
+
+Files:
+---
+  jmb-code-static.j // Contains main part of system (in process, look wiki)
+   
+  Available events:
+        initEvent               - triggers upon initialization
+        timerEvent(frequency)   - timer with specified interval (real number)
+      
