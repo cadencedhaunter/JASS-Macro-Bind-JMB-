@@ -13,6 +13,8 @@ Files:
   jmb-code-static.j // Contains main part of system (in process, look wiki)
    
   Available events:
-        initEvent               - triggers upon initialization
-        timerEvent(frequency)   - timer with specified interval (real number)
+  
+        initEvent - triggers upon initialization
+  
+        timerEvent(frequency) - timer with specified interval (real number)
       
