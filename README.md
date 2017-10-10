@@ -21,5 +21,5 @@ Files:
   
         initEvent - triggers upon initialization;
   
-        timerEvent(frequency[, isPeriodic]) - timer with specified interval (real) [is timer periodic (boolean)];
+        timerEvent(frequency[, isPeriodic]) - timer with specified interval (real) [is timer periodic (boolean), true by default];
       
