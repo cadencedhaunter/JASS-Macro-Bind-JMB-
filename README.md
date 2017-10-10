@@ -10,7 +10,7 @@ Event-binding automatization in JASS.
 
 Files:
 ---
-  jmb-code-static.j // Contains main part of system (in process, look wiki)
+  jmb-code-static.j - Contains main part of system (in process, look wiki (in progress too))
    
   Available events:
   
