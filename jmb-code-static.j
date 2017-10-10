@@ -1,13 +1,20 @@
 
-
-
+/* Headers */
 define
 {
-    
-    
+
+    /* Anonymous static code */
     <code static> = 
     {
         library ANONCODE##COUNTER initializer INIT  
+            
+            private nothing ACTION()
+    }
+
+    /* Named static code */
+    <code static>(NAME) = 
+    {
+        library NAME initializer INIT  
             
             private nothing ACTION()
     }
@@ -19,7 +26,7 @@ define
     
 }   
 
-
+/* Events */
 define
 {
 
@@ -44,12 +51,26 @@ define
         endlibrary
     }
 
+    <code event: timerEvent>(FREQ, PERIODIC) = 
+    {
+            public trigger TRIGGER = CreateTrigger()
+            
+            private function INIT takes nothing returns nothing
+                TriggerAddAction(TRIGGER, function ACTION)
+                TriggerRegisterTimerEvent(TRIGGER, FREQ, PERIODIC)
+                SETTINGS(TRIGGER)
+            endfunction
+        endlibrary
+    }
+
     
 }   
 
-// modifiers scope
+/* Modifiers */
 define
 {
+
     <set: disable> = DisableTrigger(toModify)
+    <set: enable>  = EnableTrigger(toModify)
 
 }   
