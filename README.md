@@ -31,6 +31,8 @@ Syntax:
     }
       code set: { /* nothing to modify */ }
       code event: initEvent
+   
+  The result of this simple example is the output of a message (function BJDebugMsg("text")) on the screen (on map start, 'initEvent').
 
 Files:
 ---
