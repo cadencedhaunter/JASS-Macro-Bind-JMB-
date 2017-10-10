@@ -21,5 +21,9 @@ Files:
   
         initEvent - triggers upon initialization;
   
-        timerEvent(frequency[, isPeriodic]) - timer with specified interval (real) [is timer periodic (boolean), true by default];
+        timerEvent(frequency[, isPeriodic]) - timer with specified interval (real) [is timer periodic, true by default];
+        
+        playerEvent(event[, player]) - any player events [player to apply, Player(0) by default];
+        
+        playerEventAll(event) - apply to all players.
       
