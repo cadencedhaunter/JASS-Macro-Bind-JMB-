@@ -32,7 +32,11 @@ Syntax:
       code set: { /* nothing to modify */ }
       code event: initEvent
    
-  The result of this simple example is the output of a message (function BJDebugMsg("text")) on the screen (on map start, 'initEvent').
+  The result of this simple example is the output of a message "Hello world!" (function BJDebugMsg("text")) on the screen (on map start, 'initEvent').
+
+  In this examples static code is anonymous (name is not declarated, in this case WorldEditor automatically generating unique name. It's useful, when it hard to choose name by yourself or name is not neccesary). But static code fragments like this can interact between themselves by using their names. So when static code is anonymous, it's becomes harder to set up interactions to other code fragments.
+  
+  Naming of static code is limited for some technical reasons. Using underscore '_' in name of static code will cause an error (related to vJass), so there is no way of naming static code in snake_case-style (static_code_scope), but camelCase-style is still available (staticCodeScope or StaticCodeScope).
 
 Files:
 ---
