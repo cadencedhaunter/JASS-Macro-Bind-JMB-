@@ -61,4 +61,8 @@ Files:
         playerEvent(event[, player]) - any player events [player to apply, Player(0) by default];
         
         playerEventAll(event) - apply to all players.
+        
+  Available modifiers:
+  
+        set: enable/disable - enables/disables on event triggering in static code where it described;
       
